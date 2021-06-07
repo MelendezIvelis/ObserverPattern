@@ -1,0 +1,25 @@
+package com.merit.java.patterns.observer;
+
+public class Follower implements Observer{
+
+	private String followerName;
+	
+	public Follower (String fName) {
+		this.followerName = fName;
+	}
+	public String getFollowerName() {
+		return followerName;
+	}
+
+	@Override
+	public void update(String str) {
+
+		if (str.equalsIgnoreCase("Live"))
+				this.play();
+		
+	}
+	public void play() {
+		System.out.println ("Channel is being played now!");
+	}
+
+}
