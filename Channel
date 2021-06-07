@@ -1,0 +1,5 @@
+package com.merit.java.patterns.observer;
+
+public class Channel {
+
+}
